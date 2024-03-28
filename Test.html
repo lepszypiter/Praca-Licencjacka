@@ -4,76 +4,80 @@
     <link rel="stylesheet"
     href="background_styles.css">
     <link rel="stylesheet" href="styles.css">
+    <script src="program.js" async></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Badanie czasu reakcji</title>
 </head>
 <body>
     <div class="grid-container">
-        <div class="grid-item grid-item-0"><button>button</button></div>
-        <div class="grid-item grid-item-1"><button>button</button></div>
-        <div class="grid-item grid-item-2"><button>button</button></div>
-        <div class="grid-item grid-item-3"><button>button</button></div>
-        <div class="grid-item grid-item-4"><button>button</button></div>
-        <div class="grid-item grid-item-5"><button>button</button></div>
-        <div class="grid-item grid-item-6"><button>button</button></div>
-        <div class="grid-item grid-item-7"><button>button</button></div>
-        <div class="grid-item grid-item-8"><button>button</button></div>
-        <div class="grid-item grid-item-9"><button>button</button></div>
-        <div class="grid-item grid-item-10"><button>button</button></div>
-        <div class="grid-item grid-item-11"><button>button</button></div>
-        <div class="grid-item grid-item-12"><button>button</button></div>
-        <div class="grid-item grid-item-13"><button>button</button></div>
-        <div class="grid-item grid-item-14"><button>button</button></div>
-        <div class="grid-item grid-item-15"><button>button</button></div>
-        <div class="grid-item grid-item-16"><button>button</button></div>
-        <div class="grid-item grid-item-17"><button>button</button></div>
-        <div class="grid-item grid-item-18"><button>button</button></div>
-        <div class="grid-item grid-item-19"><button>button</button></div>
-        <div class="grid-item grid-item-20"><button>button</button></div>
-        <div class="grid-item grid-item-21"><button>button</button></div>
-        <div class="grid-item grid-item-22"><button>button</button></div>
-        <div class="grid-item grid-item-23"><button>button</button></div>
-        <div class="grid-item grid-item-24"><button>button</button></div>
-        <div class="grid-item grid-item-25"><button>button</button></div>
-        <div class="grid-item grid-item-26"><button>button</button></div>
-        <div class="grid-item grid-item-27"><button>button</button></div>
-        <div class="grid-item grid-item-28"><button>button</button></div>
-        <div class="grid-item grid-item-29"><button>button</button></div>
-        <div class="grid-item grid-item-30"><button>button</button></div>
-        <div class="grid-item grid-item-31"><button>button</button></div>
-        <div class="grid-item grid-item-32"><button>button</button></div>
-        <div class="grid-item grid-item-33"><button>button</button></div>
-        <div class="grid-item grid-item-34"><button>button</button></div>
-        <div class="grid-item grid-item-35"><button>button</button></div>
-        <div class="grid-item grid-item-36"><button>button</button></div>
-        <div class="grid-item grid-item-37"><button>button</button></div>
-        <div class="grid-item grid-item-38"><button>button</button></div>
-        <div class="grid-item grid-item-39"><button>button</button></div>
-        <div class="grid-item grid-item-40"><button>button</button></div>
-        <div class="grid-item grid-item-41"><button>button</button></div>
-        <div class="grid-item grid-item-42"><button>button</button></div>
-        <div class="grid-item grid-item-43"><button>button</button></div>
-        <div class="grid-item grid-item-44"><button>button</button></div>
-        <div class="grid-item grid-item-45"><button>button</button></div>
-        <div class="grid-item grid-item-46"><button>button</button></div>
-        <div class="grid-item grid-item-47"><button>button</button></div>
-        <div class="grid-item grid-item-48"><button>button</button></div>
-        <div class="grid-item grid-item-49"><button>button</button></div>
-        <div class="grid-item grid-item-50"><button>button</button></div>
-        <div class="grid-item grid-item-51"><button>button</button></div>
-        <div class="grid-item grid-item-52"><button>button</button></div>
-        <div class="grid-item grid-item-53"><button>button</button></div>
-        <div class="grid-item grid-item-54"><button>button</button></div>
-        <div class="grid-item grid-item-55"><button>button</button></div>
-        <div class="grid-item grid-item-56"><button>button</button></div>
-        <div class="grid-item grid-item-57"><button>button</button></div>
-        <div class="grid-item grid-item-58"><button>button</button></div>
-        <div class="grid-item grid-item-59"><button>button</button></div>
-        <div class="grid-item grid-item-60"><button>button</button></div>
-        <div class="grid-item grid-item-61"><button>button</button></div>
-        <div class="grid-item grid-item-62"><button>button</button></div>
-        <div class="grid-item grid-item-63"><button>button</button></div>
+        <div class="grid-item grid-item-0"></div>
+        <div class="grid-item grid-item-1"></div>
+        <div class="grid-item grid-item-2"></div>
+        <div class="grid-item grid-item-3"></div>
+        <div class="grid-item grid-item-4"></div>
+        <div class="grid-item grid-item-5"></div>
+        <div class="grid-item grid-item-6"></div>
+        <div class="grid-item grid-item-7"></div>
+        <div class="grid-item grid-item-8"></div>
+        <div class="grid-item grid-item-9"><button class="Button" onclick="countClicks()">button</button></div>
+        <div class="grid-item grid-item-10"><button class="Button" onclick="countClicks()">button</button></div>
+        <div class="grid-item grid-item-11"><button class="Button" onclick="countClicks()">button</button></div>
+        <div class="grid-item grid-item-12"><button class="Button" onclick="countClicks()">button</button></div>
+        <div class="grid-item grid-item-13"><button class="Button" onclick="countClicks()">button</button></div>
+        <div class="grid-item grid-item-14"><button class="Button" onclick="countClicks()">button</button></div>
+        <div class="grid-item grid-item-15"><button class="Button" onclick="countClicks()">button</button></div>
+        <div class="grid-item grid-item-16"></div>
+        <div class="grid-item grid-item-17"><button class="Button" onclick="countClicks()">button</button></div>
+        <div class="grid-item grid-item-18"><button class="Button" onclick="countClicks()">button</button></div>
+        <div class="grid-item grid-item-19"><button class="Button" onclick="countClicks()">button</button></div>
+        <div class="grid-item grid-item-20"><button class="Button" onclick="countClicks()">button</button></div>
+        <div class="grid-item grid-item-21"><button class="Button" onclick="countClicks()">button</button></div>
+        <div class="grid-item grid-item-22"><button class="Button" onclick="countClicks()">button</button></div>
+        <div class="grid-item grid-item-23"><button class="Button" onclick="countClicks()">button</button></div>
+        <div class="grid-item grid-item-24"></div>
+        <div class="grid-item grid-item-25"><button class="Button" onclick="countClicks()">button</button></div>
+        <div class="grid-item grid-item-26"><button class="Button" onclick="countClicks()">button</button></div>
+        <div class="grid-item grid-item-27"><button class="Button" onclick="countClicks()">button</button></div>
+        <div class="grid-item grid-item-28"><button class="Button" onclick="countClicks()">button</button></div>
+        <div class="grid-item grid-item-29"><button class="Button" onclick="countClicks()">button</button></div>
+        <div class="grid-item grid-item-30"><button class="Button" onclick="countClicks()">button</button></div>
+        <div class="grid-item grid-item-31"><button class="Button" onclick="countClicks()">button</button></div>
+        <div class="grid-item grid-item-32"></div>
+        <div class="grid-item grid-item-33"><button class="Button" onclick="countClicks()">button</button></div>
+        <div class="grid-item grid-item-34"><button class="Button" onclick="countClicks()">button</button></div>
+        <div class="grid-item grid-item-35"><button class="Button" onclick="countClicks()">button</button></div>
+        <div class="grid-item grid-item-36"><button class="Button" onclick="countClicks()">button</button></div>
+        <div class="grid-item grid-item-37"><button class="Button" onclick="countClicks()">button</button></div>
+        <div class="grid-item grid-item-38"><button class="Button" onclick="countClicks()">button</button></div>
+        <div class="grid-item grid-item-39"><button class="Button" onclick="countClicks()">button</button></div>
+        <div class="grid-item grid-item-40"></div>
+        <div class="grid-item grid-item-41"><button class="Button" onclick="countClicks()">button</button></div>
+        <div class="grid-item grid-item-42"><button class="Button" onclick="countClicks()">button</button></div>
+        <div class="grid-item grid-item-43"><button class="Button" onclick="countClicks()">button</button></div>
+        <div class="grid-item grid-item-44"><button class="Button" onclick="countClicks()">button</button></div>
+        <div class="grid-item grid-item-45"><button class="Button" onclick="countClicks()">button</button></div>
+        <div class="grid-item grid-item-46"><button class="Button" onclick="countClicks()">button</button></div>
+        <div class="grid-item grid-item-47"><button class="Button" onclick="countClicks()">button</button></div>
+        <div class="grid-item grid-item-48"></div>
+        <div class="grid-item grid-item-49"><button class="Button" onclick="countClicks()">button</button></div>
+        <div class="grid-item grid-item-50"><button class="Button" onclick="countClicks()">button</button></div>
+        <div class="grid-item grid-item-51"><button class="Button" onclick="countClicks()">button</button></div>
+        <div class="grid-item grid-item-52"><button class="Button" onclick="countClicks()">button</button></div>
+        <div class="grid-item grid-item-53"><button class="Button" onclick="countClicks()">button</button></div>
+        <div class="grid-item grid-item-54"><button class="Button" onclick="countClicks()">button</button></div>
+        <div class="grid-item grid-item-55"><button class="Button" onclick="countClicks()">button</button></div>
+        <div class="grid-item grid-item-56"></div>
+        <div class="grid-item grid-item-57"><button class="Button" onclick="countClicks()">button</button></div>
+        <div class="grid-item grid-item-58"><button class="Button" onclick="countClicks()">button</button></div>
+        <div class="grid-item grid-item-59"><button class="Button" onclick="countClicks()">button</button></div>
+        <div class="grid-item grid-item-60"><button class="Button" onclick="countClicks()">button</button></div>
+        <div class="grid-item grid-item-61"><button class="Button" onclick="countClicks()">button</button></div>
+        <div class="grid-item grid-item-62"><button class="Button" onclick="countClicks()">button</button></div>
+        <div class="grid-item grid-item-63"><button class="Button" onclick="countClicks()">button</button></div>
+    </div>
+    <div>
+        <p id="output"></p>
     </div>
 </body>
 </html>

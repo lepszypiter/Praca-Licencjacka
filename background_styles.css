@@ -79,6 +79,12 @@
     margin: auto auto;
     border-radius:100%;    
   }
+  .light-on {
+    background-color: #f44336;
+  }
+  .light-off {
+    background-color: white;
+  }
   
  /* 
   .grid-item-2::after {

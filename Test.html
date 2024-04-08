@@ -11,16 +11,18 @@
 </head>
 <body>
     <p id="countdown"></p>
+    <button onclick="nextTest()">Kolor</button>
+    <button onclick="lightsOff()">lightsOff</button>
     <div class="grid-container">
         <div class="grid-item grid-item-0"></div>
-        <div class="grid-item grid-item-1"><div class="light"></div></div>
-        <div class="grid-item grid-item-2"><div class="light"></div></div>
-        <div class="grid-item grid-item-3"><div class="light"></div></div>
-        <div class="grid-item grid-item-4"><div class="light"></div></div>
-        <div class="grid-item grid-item-5"><div class="light"></div></div>
-        <div class="grid-item grid-item-6"><div class="light"></div></div>
-        <div class="grid-item grid-item-7"><div class="light"></div></div>
-        <div class="grid-item grid-item-8"><div class="light"></div></div>
+        <div class="grid-item grid-item-1"><div class="light" id="light-horizontal-1"></div></div>
+        <div class="grid-item grid-item-2"><div class="light" id="light-horizontal-2"></div></div>
+        <div class="grid-item grid-item-3"><div class="light" id="light-horizontal-3"></div></div>
+        <div class="grid-item grid-item-4"><div class="light" id="light-horizontal-4"></div></div>
+        <div class="grid-item grid-item-5"><div class="light" id="light-horizontal-5"></div></div>
+        <div class="grid-item grid-item-6"><div class="light" id="light-horizontal-6"></div></div>
+        <div class="grid-item grid-item-7"><div class="light" id="light-horizontal-7"></div></div>
+        <div class="grid-item grid-item-8"><div class="light" id="light-vertical-1"></div></div>
         <div class="grid-item grid-item-9"><button class="Button" onclick="countClicks()"></button></div>
         <div class="grid-item grid-item-10"><button class="Button" onclick="countClicks()"></button></div>
         <div class="grid-item grid-item-11"><button class="Button" onclick="countClicks()"></button></div>
@@ -28,7 +30,7 @@
         <div class="grid-item grid-item-13"><button class="Button" onclick="countClicks()"></button></div>
         <div class="grid-item grid-item-14"><button class="Button" onclick="countClicks()"></button></div>
         <div class="grid-item grid-item-15"><button class="Button" onclick="countClicks()"></button></div>
-        <div class="grid-item grid-item-16"><div class="light"></div></div>
+        <div class="grid-item grid-item-16"><div class="light" id="light-vertical-2"></div></div>
         <div class="grid-item grid-item-17"><button class="Button" onclick="countClicks()"></button></div>
         <div class="grid-item grid-item-18"><button class="Button" onclick="countClicks()"></button></div>
         <div class="grid-item grid-item-19"><button class="Button" onclick="countClicks()"></button></div>
@@ -36,7 +38,7 @@
         <div class="grid-item grid-item-21"><button class="Button" onclick="countClicks()"></button></div>
         <div class="grid-item grid-item-22"><button class="Button" onclick="countClicks()"></button></div>
         <div class="grid-item grid-item-23"><button class="Button" onclick="countClicks()"></button></div>
-        <div class="grid-item grid-item-24"><div class="light"></div></div>
+        <div class="grid-item grid-item-24"><div class="light" id="light-vertical-3"></div></div>
         <div class="grid-item grid-item-25"><button class="Button" onclick="countClicks()"></button></div>
         <div class="grid-item grid-item-26"><button class="Button" onclick="countClicks()"></button></div>
         <div class="grid-item grid-item-27"><button class="Button" onclick="countClicks()"></button></div>
@@ -44,7 +46,7 @@
         <div class="grid-item grid-item-29"><button class="Button" onclick="countClicks()"></button></div>
         <div class="grid-item grid-item-30"><button class="Button" onclick="countClicks()"></button></div>
         <div class="grid-item grid-item-31"><button class="Button" onclick="countClicks()"></button></div>
-        <div class="grid-item grid-item-32"><div class="light"></div></div>
+        <div class="grid-item grid-item-32"><div class="light" id="light-vertical-4"></div></div>
         <div class="grid-item grid-item-33"><button class="Button" onclick="countClicks()"></button></div>
         <div class="grid-item grid-item-34"><button class="Button" onclick="countClicks()"></button></div>
         <div class="grid-item grid-item-35"><button class="Button" onclick="countClicks()"></button></div>
@@ -52,7 +54,7 @@
         <div class="grid-item grid-item-37"><button class="Button" onclick="countClicks()"></button></div>
         <div class="grid-item grid-item-38"><button class="Button" onclick="countClicks()"></button></div>
         <div class="grid-item grid-item-39"><button class="Button" onclick="countClicks()"></button></div>
-        <div class="grid-item grid-item-40"><div class="light"></div></div>
+        <div class="grid-item grid-item-40"><div class="light" id="light-vertical-5"></div></div>
         <div class="grid-item grid-item-41"><button class="Button" onclick="countClicks()"></button></div>
         <div class="grid-item grid-item-42"><button class="Button" onclick="countClicks()"></button></div>
         <div class="grid-item grid-item-43"><button class="Button" onclick="countClicks()"></button></div>
@@ -60,7 +62,7 @@
         <div class="grid-item grid-item-45"><button class="Button" onclick="countClicks()"></button></div>
         <div class="grid-item grid-item-46"><button class="Button" onclick="countClicks()"></button></div>
         <div class="grid-item grid-item-47"><button class="Button" onclick="countClicks()"></button></div>
-        <div class="grid-item grid-item-48"><div class="light"></div></div>
+        <div class="grid-item grid-item-48"><div class="light" id="light-vertical-6"></div></div>
         <div class="grid-item grid-item-49"><button class="Button" onclick="countClicks()"></button></div>
         <div class="grid-item grid-item-50"><button class="Button" onclick="countClicks()"></button></div>
         <div class="grid-item grid-item-51"><button class="Button" onclick="countClicks()"></button></div>
@@ -68,7 +70,7 @@
         <div class="grid-item grid-item-53"><button class="Button" onclick="countClicks()"></button></div>
         <div class="grid-item grid-item-54"><button class="Button" onclick="countClicks()"></button></div>
         <div class="grid-item grid-item-55" ><button class="Button" onclick="countClicks()"></button></div>
-        <div class="grid-item grid-item-56"><div class="light"></div></div>
+        <div class="grid-item grid-item-56"><div class="light" id="light-vertical-7"></div></div>
         <div class="grid-item grid-item-57"><button class="Button" onclick="countClicks()"></button></div>
         <div class="grid-item grid-item-58"><button class="Button" onclick="countClicks()"></button></div>
         <div class="grid-item grid-item-59"><button class="Button" onclick="countClicks()"></button></div>

@@ -1,8 +1,8 @@
 var count = 0
 var output = document.getElementById('output')
-
 var expectedHorizontal = 0
 var expectedVertical = 0
+output.innerHTML = count
 
 
 function countClicks(elem)
@@ -17,7 +17,11 @@ function countClicks(elem)
 const startingMinutes = 1
 let time = startingMinutes * 60
 
-const countdownEl = document.getElementById('countdown')
+ countdownEl = document.getElementById('countdown')
+ const minutes = Math.floor(time / 60)
+    let seconds = time % 60 +1
+    seconds = seconds < 10 ? '0' + seconds : seconds
+ countdownEl.innerHTML = `${minutes}:${seconds}`
 
 function checkTest(clickedId)
 {

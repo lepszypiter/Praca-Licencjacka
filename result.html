@@ -2,16 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <script src="result.js" async></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Badanie czasu reakcji</title>
 </head>
 <body>
-    <div id="wynik">Wynik: </div>
-    
-    <div>Proszę podać imię.</div>
-    <input type="text"><br>
-    <div>Proszę podać wiek.</div>
-    Wiek: <input type="number"><br>
-    <button>Wyślij</button>
+    <form action="http://localhost:5152/api/Results" method="POST">
+    <div><span> Wynik: </span><span id="result"></span></div>
+    <div>
+    <label for="name">Proszę podać imię:</label>
+    <input name="name" type="text" id="name"/>
+    </div>
+    <div>
+      <label for="age">Proszę podać wiek:</label>
+      <input name="age" type="number" min="1" max="100" id="age"/>
+    </div>
+    <input name="id" type="text" id="id" hidden>
+    <input name="count" type="text" id="count" hidden>
+    <button type="submit">Wyślij</button>
+    </form>
 </body>
 </html>

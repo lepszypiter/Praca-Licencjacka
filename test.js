@@ -80,8 +80,10 @@ function updateCountdown() {
 }
 function redirectPage()
 {
-    window.location="Wyniki.html"
+    localStorage.setItem("result", count);
+    localStorage.setItem("id", crypto.randomUUID());
+
+    window.location="result.html"
 }
 setTimeout('redirectPage()', time * 1000 + 2000)
 
-localStorage.setItem("result", count);

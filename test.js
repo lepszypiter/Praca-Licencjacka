@@ -83,3 +83,5 @@ function redirectPage()
     window.location="Wyniki.html"
 }
 setTimeout('redirectPage()', time * 1000 + 2000)
+
+localStorage.setItem("result", count);

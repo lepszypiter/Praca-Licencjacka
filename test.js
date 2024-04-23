@@ -80,7 +80,7 @@ function updateCountdown() {
 }
 function redirectPage()
 {
-    localStorage.setItem("result", count);
+    localStorage.setItem("score", count);
     localStorage.setItem("id", crypto.randomUUID());
 
     window.location="result.html"

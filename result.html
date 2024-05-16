@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="stylesheet" href="background-no-grid.css">
     <meta charset="UTF-8">
     <script src="result.js" async></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Badanie czasu reakcji</title>
 </head>
-<body>
+<body class="body">
     <form action="https://driver-test-dev.azurewebsites.net/api/Results" method="POST">
     <div><span> Wynik: </span><span id="result"></span></div>
     <div>
@@ -19,7 +20,7 @@
     </div>
     <input name="id" type="text" id="id" hidden>
     <input name="score" type="text" id="score" hidden>
-    <button type="submit">Wyślij</button>
+    <a href="thanks.html"><button type="submit">Wyślij</button></a>
     </form>
 </body>
 </html>

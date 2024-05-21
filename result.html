@@ -38,6 +38,9 @@
           window.location.href = 'thanks.html'; // Redirect to the thanks.html page
         } else {
           alert('An error occurred while submitting the form.');
+          response.text().then(text => { 
+            alert('An error occurred: ' + text);
+          });
         }
       }).catch(error => {
         console.error('Error:', error);

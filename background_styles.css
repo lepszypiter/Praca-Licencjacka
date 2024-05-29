@@ -1,329 +1,102 @@
 .grid-container {
-    display: grid;
-    grid-template-columns: 200px 250px;
-    grid-auto-rows: minmax(50px, auto);
-    grid-gap: 0px;
-    justify-items: stretch;
-    align-items: stretch;
-  }
-  
+  display: grid;
+  grid-template-columns: 200px 50px;
+  grid-auto-rows: minmax(0px, auto);
+  grid-gap: 0px;
+  justify-items: stretch;
+  align-items: stretch;
+}
 
-  
-  * {
-      font-family: Raleway;
-  }
-  
-  *, *::before, *::after {
-    box-sizing: border-box;
-  }
-  
-  html, body {
-    background-color: #333;
-    height: 100%;
-    margin: 0;
-  }
-  
-  .grid-container {
-    position: relative;
-    padding: 20px;
-    width: 100%;
-  }
-  
-  .grid-item {
-    position: relative;
-    font-size: 25px;
-    padding: 20px;
-    padding-top: 50px;
-    background-color: #379AD6;
-    color: #222;
-    border: 1px solid white;
-  }
-  
-  .grid-item:nth-child(odd) {
-    background-color: #5bbdfa;
-  }
-  
-  .grid-item::before {
-    content: 'Grid Item';
-    position: absolute;
-    font-size: 25px;
-    font-weight: bold;
-    top: 10px;
-    left: 15px;
-  }
-  
-  .grid-item::after {
-    position: absolute;
-    font-size: 25px;
-    top: 10px;
-    right: 15px;
-    font-weight: bold;
-  }
+.CzasIWynik {
+  background-color: white;
+  display: inline-flex;
+  align-items: center;
+  font-size: 50px;
+  height: 70px;
+  width:100%;
+  text-align: center;
+}
 
-  .grid-item-1::after {
-    content: '1';
-  }
-  
-  .grid-item-2::after {
-    content: '2';
-  }
-  
-  .grid-item-3::after {
-    content: '3';
-  }
-  
-  .grid-item-4::after {
-    content: '4';
-  }
-  
-  .grid-item-5::after {
-    content: '5';
-  }
-  
-  .grid-item-6::after {
-    content: '6';
-  }
-  
-  .grid-item-7::after {
-    content: '7';
-  }
-  
-  .grid-item-8::after {
-    content: '8';
-  }
-  
-  .grid-item-9::after {
-    content: '9';
-  }
-  
-  .grid-item-10::after {
-    content: '10';
-  }
-  
-  .grid-item-11::after {
-    content: '11';
-  }
-  
-  .grid-item-12::after {
-    content: '12';
-  }
-  
-  .grid-item-13::after {
-    content: '13';
-  }
-  
-  .grid-item-14::after {
-    content: '14';
-  }
-  
-  .grid-item-15::after {
-    content: '15';
-  }
-  
-  .grid-item-16::after {
-    content: '16';
-  }
-  
-  .grid-item-17::after {
-    content: '17';
-  }
-  
-  .grid-item-18::after {
-    content: '18';
-  }
-  
-  .grid-item-19::after {
-    content: '19';
-  }
-  
-  .grid-item-20::after {
-    content: '20';
-  }
-  
-  .grid-item-21::after {
-    content: '21';
-  }
-  
-  .grid-item-22::after {
-    content: '22';
-  }
-  
-  .grid-item-23::after {
-    content: '23';
-  }
-  
-  .grid-item-24::after {
-    content: '24';
-  }
-  
-  .grid-item-25::after {
-    content: '25';
-  }
-  
-  .grid-item-26::after {
-    content: '26';
-  }
-  
-  .grid-item-27::after {
-    content: '27';
-  }
-  
-  .grid-item-28::after {
-    content: '28';
-  }
-  
-  .grid-item-29::after {
-    content: '29';
-  }
-  
-  .grid-item-30::after {
-    content: '30';
-  }
-  
-  .grid-item-31::after {
-    content: '31';
-  }
-  
-  .grid-item-32::after {
-    content: '32';
-  }
-  
-  .grid-item-33::after {
-    content: '33';
-  }
-  
-  .grid-item-34::after {
-    content: '34';
-  }
-  
-  .grid-item-35::after {
-    content: '35';
-  }
-  
-  .grid-item-36::after {
-    content: '36';
-  }
-  
-  .grid-item-37::after {
-    content: '37';
-  }
-  
-  .grid-item-38::after {
-    content: '38';
-  }
-  
-  .grid-item-39::after {
-    content: '39';
-  }
-  
-  .grid-item-40::after {
-    content: '40';
-  }
-  
-  .grid-item-41::after {
-    content: '41';
-  }
-  
-  .grid-item-42::after {
-    content: '42';
-  }
-  
-  .grid-item-43::after {
-    content: '43';
-  }
-  
-  .grid-item-44::after {
-    content: '44';
-  }
-  
-  .grid-item-45::after {
-    content: '45';
-  }
-  
-  .grid-item-46::after {
-    content: '46';
-  }
-  
-  .grid-item-47::after {
-    content: '47';
-  }
-  
-  .grid-item-48::after {
-    content: '48';
-  }
-  
-  .grid-item-49::after {
-    content: '49';
-  }
-  
-  .grid-item-50::after {
-    content: '50';
-  }
-  
-  .grid-item-51::after {
-    content: '51';
-  }
-  
-  .grid-item-52::after {
-    content: '52';
-  }
-  
-  .grid-item-53::after {
-    content: '53';
-  }
-  
-  .grid-item-54::after {
-    content: '54';
-  }
-  
-  .grid-item-55::after {
-    content: '55';
-  }
-  
-  .grid-item-56::after {
-    content: '56';
-  }
-  
-  .grid-item-57::after {
-    content: '57';
-  }
-  
-  .grid-item-58::after {
-    content: '58';
-  }
-  
-  .grid-item-59::after {
-    content: '59';
-  }
-  
-  .grid-item-60::after {
-    content: '60';
-  }
-  
-  .grid-item-61::after {
-    content: '61';
-  }
-  
-  .grid-item-62::after {
-    content: '62';
-  }
-  
-  .grid-item-63::after {
-    initial-value: 63;
-    content: '63';
-  }
-  
+.Czas {
+  margin: auto;
+  margin-left:45%;
+}
+.Wynik {
+margin: auto;
+text-align: left;
+}
+
+* {
+    font-family: Raleway;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  background-color: #333;
+  height: 100%;
+  margin: 0;
+}
+
+.grid-container {
+  border: #000000;
+  position: relative;
+  padding: 4px;
+  width: 100%;
+}
+
+.grid-item {
+  position: relative;
+  font-size: 25px;
+  padding: 10px;
+  background-color: #5bbdfa;
+  color: #222;
+  border: 1px solid white;
+  justify-content: center;
+  display: flex;
+}
+
+
+.grid-item::before {
+  /* position: absolute; */
+  font-size: 25px;
+  font-weight: bold;
+  /* top: 10px;
+  left: 15px; */
+}
+
+.grid-item::after {
+  /* position: absolute; */       
+  font-size: 25px;
+  /* top: 10px;
+  right: 15px; */
+  font-weight: bold;
+}
 
   .Button {
-    background-color: #0004ff;
-    border: none;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    border-radius:100%;
-  }
-  
+  background-color: #0004ff;
+  color: white;
+  border: none;
+  padding: 40px; 
+  margin: auto auto;
+  border-radius:100%;    
+}
+.Button:hover{
+  background-color: #f44336;
+}
+.light {
+  background-color: rgb(255, 255, 255);
+  color: white;
+  border: none;
+  padding: 20px; 
+  margin: auto auto;
+  border-radius:100%;    
+}
+.light-on {
+  background-color: #f44336;
+}
+.light-off {
+  background-color: white;
+}

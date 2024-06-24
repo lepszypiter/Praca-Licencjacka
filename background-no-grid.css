@@ -7,4 +7,6 @@ body{
     font-size: 25px;
     text-align: center;
     color: wheat;
+    width: 100vw;
+    height: 100vh;
 }

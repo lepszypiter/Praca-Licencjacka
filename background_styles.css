@@ -1,6 +1,5 @@
 .grid-container {
   display: grid;
-  grid-template-columns: 200px 50px;
   grid-auto-rows: minmax(0px, auto);
   grid-gap: 0px;
   justify-items: stretch;
@@ -11,9 +10,9 @@
   background-color: white;
   display: inline-flex;
   align-items: center;
-  font-size: 50px;
-  height: 70px;
-  width:100%;
+  font-size: 5vh;
+  height: 5vh;
+  width:100vw;
   text-align: center;
 }
 
@@ -43,14 +42,13 @@ html, body {
 .grid-container {
   border: #000000;
   position: relative;
-  padding: 4px;
-  width: 100%;
+  padding: 0px;
+  width: 100vw;
 }
 
 .grid-item {
   position: relative;
-  font-size: 25px;
-  padding: 10px;
+  padding: 1vh;
   background-color: #5bbdfa;
   color: #222;
   border: 1px solid white;
@@ -58,28 +56,11 @@ html, body {
   display: flex;
 }
 
-
-.grid-item::before {
-  /* position: absolute; */
-  font-size: 25px;
-  font-weight: bold;
-  /* top: 10px;
-  left: 15px; */
-}
-
-.grid-item::after {
-  /* position: absolute; */       
-  font-size: 25px;
-  /* top: 10px;
-  right: 15px; */
-  font-weight: bold;
-}
-
   .Button {
   background-color: #0004ff;
   color: white;
   border: none;
-  padding: 40px; 
+  padding: 5vh; 
   margin: auto auto;
   border-radius:100%;    
 }
@@ -90,9 +71,9 @@ html, body {
   background-color: rgb(255, 255, 255);
   color: white;
   border: none;
-  padding: 20px; 
+  padding: 3vh; 
   margin: auto auto;
-  border-radius:100%;    
+  border-radius:100vw;    
 }
 .light-on {
   background-color: #f44336;

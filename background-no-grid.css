@@ -1,24 +1,30 @@
-body{
+body {
     background-image: url('deska-rozdzielcza-2.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;  
     background-size: cover;
     margin-top: 15%;
-    font-size: 25px;
+    font-size: 5vh;
     text-align: center;
     color: wheat;
     width: 100vw;
     height: 100vh;
 }
-@media only screen and (hover: none) and (pointer: coarse)  and (orientation: portrait) {
+
+button {
+    height: 6vh;
+    font-size: 5vh;
+}
+
+@media only screen and (hover: none) and (pointer: coarse) and (orientation: portrait) {
     html {
-      transform: rotate(-90deg);
-      transform-origin: left top;
-      width: 100vh;
-      height: 100vw;
-      overflow-x: hidden;
-      position: absolute;
-      top: 100%;
-      left: 0;
+        transform: rotate(-90deg);
+        transform-origin: left top;
+        width: 100vh;
+        height: 100vw;
+        overflow-x: hidden;
+        position: absolute;
+        top: 100%;
+        left: 0;
     }
-  }
+}

@@ -14,7 +14,7 @@ function countClicks(elem)
 
 }
 
-const startingMinutes = 100
+const startingMinutes = 1
 let time = startingMinutes * 60
 
  countdownEl = document.getElementById('countdown')

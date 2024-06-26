@@ -6,6 +6,26 @@
   <script src="result.js" async></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Badanie czasu reakcji</title>
+  <script>
+    function setLanguage() {
+      const language = localStorage.getItem('language') || 'pl';
+      if (language === 'en') {
+        document.querySelector('title').innerText = 'Reaction Time Test';
+        document.querySelector('label[for="name"]').innerText = 'Please enter your name:';
+        document.querySelector('label[for="age"]').innerText = 'Please enter your age:';
+        document.querySelector('button[type="submit"]').innerText = 'Submit';
+        document.querySelector('span').innerText = 'Result:';
+      } else {
+        document.querySelector('title').innerText = 'Badanie czasu reakcji';
+        document.querySelector('label[for="name"]').innerText = 'Proszę podać imię:';
+        document.querySelector('label[for="age"]').innerText = 'Proszę podać wiek:';
+        document.querySelector('button[type="submit"]').innerText = 'Wyślij';
+        document.querySelector('span').innerText = 'Wynik:';
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', setLanguage);
+  </script>
 </head>
 <body class="body">
   <form action="https://driver-test-dev.azurewebsites.net/api/Results" method="POST" onsubmit="handleSubmit(event)">

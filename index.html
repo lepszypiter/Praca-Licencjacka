@@ -1,23 +1,66 @@
-<!DOCTYPE html >
+<!DOCTYPE html>
 <html lang="en">
-<head> 
-    <link rel="stylesheet"
-    href="background-no-grid.css">
+<head>
+    <link rel="stylesheet" href="background-no-grid.css">
     <script src="index.js" async></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="mobile-web-app-capable" content="yes">
     <title>Badanie czasu reakcji</title>
+    <script>
+        function translateToEnglish() {
+            document.getElementById('test-description').innerHTML = `
+                The purpose of this test is to study reaction time of drivers.
+                For this purpose, red indicators will light up at the top and on the left side of the screen, 
+                and your task is to click the point at the intersection of the lines indicated by these indicators.
+                The test should be performed only once.
+                The test will last 1 minute and measure how many points you managed to click.
+                After the test, you will need to provide your name and age.
+                Finally, the results will be sent for statistical research and used in a bachelor's thesis.
+            `;
+            document.getElementById('start-test-button').innerText = 'Start Test';
+            document.getElementById('translate-button').innerText = 'Przetłumacz na Polski';
+            document.getElementById('translate-button').onclick = translateToPolish;
+            localStorage.setItem('language', 'en');
+        }
+
+        function translateToPolish() {
+            document.getElementById('test-description').innerHTML = `
+                Celem tego testu jest badanie czasu reakcji u kierowców.
+                W tym celu na górze i po lewej stronie ekranu będą zapalać się czerwone diody a Pana/Pani zadaniem jest kliknięcie punktu na styku linii wyznaczanych przez te diody.
+                Test należy wykonać tylko 1 raz.
+                Test będzie trwał 1 minutę i zmierzy ile punktów udało się Panu/Pani kliknąć.
+                Po teście będzie trzeba podac imię oraz wiek.
+                Na końcu wyniki będą przesłane w celu badań statystycznych i użyte w pracy licencjackiej.
+            `;
+            document.getElementById('start-test-button').innerText = 'Rozpocznij Test';
+            document.getElementById('translate-button').innerText = 'Translate to English';
+            document.getElementById('translate-button').onclick = translateToEnglish;
+            localStorage.setItem('language', 'pl');
+        }
+
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const language = localStorage.getItem('language') || 'pl';
+            if (language === 'en') {
+                translateToEnglish();
+            } else {
+                translateToPolish();
+            }
+        });
+    </script>
 </head>
 <body class="body">
     <div class="content">
-        <div>Celem tego testu jest badanie czasu reakcji u kierowców.
-        W tym celu na górze i po lewej stronie ekranu będą zapalać się czerwone diody a Pana/Pani zadaniem jest kliknięcie punktu na styku linii wyznaczanych przez te diody.
-        Test należy wykonać tylko 1 raz.
-        Test będzie trwał 1 minutę i zmierzy ile punktów udało się Panu/Pani kliknąć.
-        Po teście będzie trzeba podac imię oraz wiek.
-        Na końcu wyniki będą przesłane w celu badań statystycznych i użyte w pracy licencjackiej.</div>
-        <a href="Test.html"><button>Rozpocznij Test</button></a>
+        <div id="test-description">
+            Celem tego testu jest badanie czasu reakcji u kierowców.
+            W tym celu na górze i po lewej stronie ekranu będą zapalać się czerwone diody a Pana/Pani zadaniem jest kliknięcie punktu na styku linii wyznaczanych przez te diody.
+            Test należy wykonać tylko 1 raz.
+            Test będzie trwał 1 minutę i zmierzy ile punktów udało się Panu/Pani kliknąć.
+            Po teście będzie trzeba podac imię oraz wiek.
+            Na końcu wyniki będą przesłane w celu badań statystycznych i użyte w pracy licencjackiej.
+        </div>
+        <a href="Test.html"><button id="start-test-button">Rozpocznij Test</button></a>
+        <button id="translate-button" onclick="translateToEnglish()">Translate to English</button>
     </div>
 </body>
 </html>

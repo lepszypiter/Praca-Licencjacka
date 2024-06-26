@@ -1,11 +1,24 @@
-<!DOCTYPE html >
+<!DOCTYPE html>
 <html lang="en">
 <head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Podziękowania</title>
-    <link rel="stylesheet"
-    href="background-no-grid.css">
+    <link rel="stylesheet" href="background-no-grid.css">
+    <script>
+        function setLanguage() {
+            const language = localStorage.getItem('language') || 'pl';
+            if (language === 'en') {
+                document.querySelector('title').innerText = 'Thank You';
+                document.querySelector('.content div').innerText = 'Thank you for taking the test';
+            } else {
+                document.querySelector('title').innerText = 'Podziękowania';
+                document.querySelector('.content div').innerText = 'Dziękuję za wykonanie testu';
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', setLanguage);
+    </script>
 </head>
 <body class="body">
     <div class="content">

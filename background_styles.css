@@ -35,8 +35,8 @@ text-align: left;
 
 html, body {
   background-color: #333;
-  height: 100vh;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0%;
 }
 
 .grid-container {
@@ -80,4 +80,17 @@ html, body {
 }
 .light-off {
   background-color: white;
+}
+
+@media only screen and (hover: none) and (pointer: coarse)  and (orientation: portrait) {
+  html {
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    width: 100vh;
+    height: 100vw;
+    overflow-x: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
 }
